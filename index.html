@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 id="title" class="text-center">Sample Survey Form</h1>
+        <p id="description" class="description text-center">
+          Please fill out the following survey form.
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input
+            id="name"
+            type="text"
+            placeholder="Enter your name"
+            class="form-control"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            id="email"
+            type="email"
+            placeholder="Enter your e-mail"
+            class="form-control"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number"
+            >Age <span class="clue">(optional)</span></label
+          >
+          <input
+            id="number"
+            type="number"
+            placeholder="Enter your age"
+            class="form-control"
+            min="15"
+            max="100"
+          />
+        </div>
+        <div class="form-group">
+          <p>Are you Boris or Lucy?</p>
+          <select id="dropdown" class="form-control">
+            <option selected disabled>Choose your name</option>
+            <option value="Lucy">I am Lucy!</option>
+            <option value="Boris">I am Boris!</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>What is your level of contact with the extraterrestrials?</p>
+          <label>
+            <input
+              type="radio"
+              id="conscious"
+              name="et_contact"
+              value="conscious"
+              class="input-radio"
+              checked
+            />
+            I have conscious contact with extraterrestrials.</label
+          >
+          <label>
+            <input
+              type="radio"
+              id="dream"
+              name="et_contact"
+              value="dream"
+              class="input-radio"
+            />
+            I meet with extraterrestrials in my dreams.</label
+          >
+          <label>
+            <input
+              type="radio"
+              id="unconscious"
+              name="et_contact"
+              value="unconscious"
+              class="input-radio"
+            />
+            I am not conscious of my contact with extraterrestrials.</label
+          >
+        </div>
+        <div class="form-group">
+          <p>
+            What is your plan for tonight?
+            <span class="clue">(You can choose multiple options)</span>
+          </p>
+          <label>
+            <input
+              type="checkbox"
+              name="plan"
+              value="fuck"
+              class="input-checkbox"
+            />
+            Fuck like an animal!</label
+          >
+          <label>
+            <input
+              type="checkbox"
+              name="plan"
+              value="gentle"
+              class="input-checkbox"
+            />
+            Gentle lovemaking.</label
+          >
+          <label>
+            <input
+              type="checkbox"
+              name="plan"
+              value="sleep"
+              class="input-checkbox"
+            />
+            Sleep like a baby.</label
+          >
+          <label>
+            <input
+              type="checkbox"
+              name="plan"
+              value="story"
+              class="input-checkbox"
+            />
+            Listen to a fairy-tale.</label
+          >
+          <label>
+            <input
+              type="checkbox"
+              name="plan"
+              value="guitar"
+              class="input-checkbox"
+            />
+            Have Boris play me some guitar.</label
+          >
+        </div>
+        <div class="form-group">
+          <p>Any comments or observations?</p>
+          <textarea
+            id="comments"
+            name="comment"
+            placeholder="A place for your thoughts and feelings.."
+            class="input-textarea"
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
